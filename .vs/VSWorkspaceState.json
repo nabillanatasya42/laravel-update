@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bootstrap",
+    "\\database",
+    "\\public",
+    "\\resources",
+    "\\resources\\views",
+    "\\resources\\views\\layouts",
+    "\\storage",
+    "\\storage\\app",
+    "\\tests"
+  ],
+  "SelectedNode": "\\resources\\views\\addproducts.blade.php",
+  "PreviewInSolutionExplorer": false
+}
