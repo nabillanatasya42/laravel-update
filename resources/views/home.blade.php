@@ -15,11 +15,6 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-
-                    <a style= "float:right" href="{{url('AddVendorForm')}}">Add Vendor</a>
-                    <a style= "float:right" href="{{url('ViewVendorForm')}}">View Vendor</a>
-                    <a style= "float:right" href="{{url('UpdateVendorForm')}}">Update Vendor</a>
-
                 </div>
             </div>
         </div>

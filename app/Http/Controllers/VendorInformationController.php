@@ -55,7 +55,8 @@ class VendorInformationController extends Controller
 
     public function DeleteVendorProfile($id)
     {
-
+        DB::table('vendors')->where('id',$id)->delete();
+        return back()->with('delete_vendor', 'Vendor deleted successfully!!');
     }
 
 }

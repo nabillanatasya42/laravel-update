@@ -69,6 +69,19 @@
                             </div>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstraporder" aria-expanded="true" aria-controls="collapseBootstraporder">
+                            <i class="fab fa fa-database"></i>
+                            <span>Manage Vendor Information</span>
+                        </a>
+                        <div id="collapseBootstraporder" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="{{url('AddVendorForm')}}">Add Vendor</a>
+                                <a class="collapse-item" href="{{url('ViewVendorForm')}}">View Vendor List</a>
+                                <a class="collapse-item" href="{{url('UpdateVendorForm')}}">Update Vendor</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
 

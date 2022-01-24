@@ -11,11 +11,11 @@
 							<div class="text-center">
 								<h1 class="h4 text-gray-900 mb-4">Add Vendor</h1>
 							</div>
-
+                            <br>
                             @if(Session::has('vendor_update'))
                             <span>{{Session::get('vendor_update')}}</span>
                             @endif
-
+                            <br>
                             <br>
                             <br>
                             <form action="{{route('update.vendor')}}" method="POST" enctype="multipart/form-data">

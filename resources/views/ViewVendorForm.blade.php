@@ -12,6 +12,9 @@
 						<input type="text" placeholder="Search By Phone" v-model="searchTerm" class="form-control" style="width: 300px;margin-right: -900px;" />
 			
 					</div>
+                    @if(Session::has('delete_vendor'))
+                    <span>{{Session::get('delete_vendor')}}</span>
+                    @endif
 					<div class="table-responsive">
 						<table class="table align-items-center table-flush">
 							<thead class="thead-light">
