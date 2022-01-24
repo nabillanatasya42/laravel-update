@@ -11,6 +11,6 @@
     "\\storage\\app",
     "\\tests"
   ],
-  "SelectedNode": "\\resources\\views\\addproducts.blade.php",
+  "SelectedNode": "\\resources\\views\\order_details.blade.php",
   "PreviewInSolutionExplorer": false
 }

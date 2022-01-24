@@ -54,6 +54,15 @@ Route::get('/order-details/{id}', [App\Http\Controllers\OrderController::class, 
 
 Route::get('/stock', [App\Http\Controllers\ProductController::class, 'productStock'])->name('stock');
 
+Route::get('/AddVendorForm', [App\Http\Controllers\VendorInformationController::class, 'AddVendorProfile'])->name('AddVendorForm');
+Route::post('/AddVendorForm', [App\Http\Controllers\VendorInformationController::class, 'SaveVendor'])->name('save.vendor');
+
+Route::get('/ViewVendorForm', [App\Http\Controllers\VendorInformationController::class, 'ViewVendorProfile'])->name('ViewVendorForm');
+//Route::get('/ListVendorForm', [App\Http\Controllers\VendorInformationController::class, 'ListVendorDetails'])->name('UpdateVendorForm');
+Route::get('/UpdateVendorForm/{id}', [App\Http\Controllers\VendorInformationController::class, 'UpdateVendorProfile'])->name('UpdateVendorForm');
+
+Route::get('/DeleteVendorProfile/{id}', [App\Http\Controllers\VendorInformationController::class, 'DeleteVendorProfile'])->name('DeleteVendorProfile');
+
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
