@@ -14,6 +14,7 @@ class ReturnDefectiveItemController extends Controller
     {
        DB: :table('products')->where ('product_id',$request->product_id)->view([
            'customer_name'=>$request->customer_name,
+           'category_id'=>$request->category_id,
            'product_quantity'=>$request->product_quantity,
            'product_price'=>$request->product_price,
        ]);
@@ -22,6 +23,7 @@ class ReturnDefectiveItemController extends Controller
     public function AddInventoryItem(Request $request)
     {
        DB: :table('products')->where ('product_id',$request->product_id)->add([
+           'category_id'=>$request->category_id,
            'product_quantity'=>$request->product_quantity,
            'product_price'=>$request->product_price,
        ]);
