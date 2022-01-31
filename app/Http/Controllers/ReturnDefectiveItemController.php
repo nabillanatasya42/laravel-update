@@ -10,7 +10,7 @@ use App\Models\Product;
 
 class ReturnDefectiveItemController extends Controller
 {
-    public function ViewInventoryItem(Request $request)
+    public function ViewInventoryItem(Request $request) //view inventory
     {
        DB: :table('products')->where ('product_id',$request->product_id)->view([
            'customer_name'=>$request->customer_name,
