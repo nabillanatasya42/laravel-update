@@ -27,6 +27,6 @@ class ReturnDefectiveItemController extends Controller
            'product_quantity'=>$request->product_quantity,
            'product_price'=>$request->product_price,
        ]);
-            return back()->with('product_id', 'Return defective item added successfully!!');
+          
 
 }
